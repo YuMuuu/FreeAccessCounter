@@ -19,7 +19,7 @@ docker-compose run app deno fmt ./src
 > Lint Code
 
 ~~~sh
-docker-compose run app deno fmt ./src
+docker-compose run app deno lint --unstable ./src
 ~~~
 
 
