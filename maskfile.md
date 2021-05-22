@@ -4,7 +4,7 @@
 > Setup for development
 
 ~~~sh
-deno run --allow-net src/app.ts
+docker-compose up -d
 ~~~
 
 
@@ -12,7 +12,14 @@ deno run --allow-net src/app.ts
 > format Code
 
 ~~~sh
-deno fmt /**/*.ts
+docker-compose run app deno fmt ./src
+~~~
+
+## lint
+> Lint Code
+
+~~~sh
+docker-compose run app deno fmt ./src
 ~~~
 
 
