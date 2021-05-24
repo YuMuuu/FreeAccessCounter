@@ -1,9 +1,6 @@
-import {
-  WebSocketClient,
-  WebSocketServer,
-} from "https://deno.land/x/websocket@v0.1.1/mod.ts";
-import { connect } from "https://deno.land/x/redis/mod.ts";
-import { v4 } from "https://deno.land/std/uuid/mod.ts";
+import { WebSocketClient, WebSocketServer } from "./deps.ts";
+import { connect } from "./deps.ts";
+import { v4 } from "./deps.ts";
 
 const sockets = new Map<string, [string, WebSocketClient]>();
 
